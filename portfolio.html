@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mustafa Khaled | Portfolio</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1e293b;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+header p {
+    color: #94a3b8;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+h2 {
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 10px;
+}
+
+.project {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Clickable Skills */
+.skills a {
+    text-decoration: none;
+}
+
+.skills span {
+    display: inline-block;
+    background: #38bdf8;
+    color: black;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: white;
+    color: #0f172a;
+    transform: scale(1.1);
+}
+
+ul {
+    line-height: 1.8;
+}
+
+/* Premium Contact */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.icon {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.icon img {
+    width: 35px;
+}
+
+.icon span {
+    position: absolute;
+    top: -35px;
+    background: #38bdf8;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.icon:hover span {
+    opacity: 1;
+    top: -45px;
+}
+
+.icon:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.5);
+}
+
+.linkedin:hover { background: #0A66C2; }
+.email:hover { background: #EA4335; }
+.whatsapp:hover { background: #25D366; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Mustafa Khaled</h1>
+    <p>Data Engineer</p>
+</header>
+
+<section>
+<h2>About Me</h2>
+<p>
+I have strong expertise in transforming raw data into actionable insights by designing and building Data Pipelines, and efficiently working with various database systems.
+<br><br>
+I simplify complex data by cleaning, processing, and transforming it into insights that support smart decision-making and deliver tangible results.
+<br><br>
+I adopt a practical approach focused on quality, accuracy, and delivering real value in every project.
+</p>
+</section>
+
+<section>
+<h2>Projects</h2>
+
+<div class="project">
+    <h3>COVID-19 Data Pipeline</h3>
+    <p>Built an end-to-end data pipeline to collect, process, and analyze COVID-19 data.</p>
+    <ul>
+        <li>Integrated data from APIs</li>
+        <li>Cleaned and transformed datasets</li>
+        <li>Automated workflows using Airflow</li>
+        <li>Created dashboards using Power BI</li>
+    </ul>
+    <p><strong>Impact:</strong> Improved reporting efficiency and automation.</p>
+    <p><strong>Tools:</strong> Python, Pandas, SQL, Airflow, Power BI</p>
+    <p><a href="https://github.com/Mustafa2175/covid-data-pipeline" target="_blank">View Project</a></p>
+</div>
+
+<div class="project">
+    <h3>Data Warehouse (dbt + Snowflake + Airflow)</h3>
+    <p>Built a scalable data warehouse for structured analytics.</p>
+    <ul>
+        <li>Developed models using dbt</li>
+        <li>Managed workflows with Airflow</li>
+        <li>Integrated multiple data sources</li>
+    </ul>
+    <p><strong>Impact:</strong> Enabled faster and more reliable analytics.</p>
+    <p><strong>Tools:</strong> dbt, Snowflake, SQL, Airflow</p>
+</div>
+
+<div class="project">
+    <h3>Sushi Restaurant Ordering Website</h3>
+    <p>Contributed to building a web-based ordering system for a sushi restaurant.</p>
+    <ul>
+        <li>Developed a notification center for real-time updates</li>
+        <li>Worked on frontend & backend integration</li>
+        <li>Improved user interaction</li>
+    </ul>
+    <p><strong>Impact:</strong> Enhanced user experience through real-time notifications.</p>
+    <p><strong>Tools:</strong> PHP, REST API concepts</p>
+    <p><a href="https://github.com/Mustafa2175/sushi-grill-ordering-app" target="_blank">View Project</a></p>
+</div>
+
+<div class="project">
+    <h3>Egypt Tourism Exploration Platform</h3>
+    <p>
+        Contributed to the development of a web platform designed to help tourists explore hidden gems
+        across different governorates in Egypt.
+    </p>
+    <ul>
+        <li>Implemented browsing features by governorate</li>
+        <li>Structured location-based data</li>
+        <li>Enhanced user experience for discovering hidden destinations</li>
+    </ul>
+    <p><strong>Impact:</strong> Improved accessibility to lesser-known destinations across Egypt.</p>
+    <p><strong>Tools:</strong> Web Development, Data Handling, REST Concepts</p>
+    <p><a href="https://github.com/Mustafa2175/egypt-on-the-go" target="_blank">View Project</a></p>
+</div>
+
+</section>
+
+<section>
+<h2>Skills</h2>
+
+<h3>Technical Skills</h3>
+
+<p><strong>Languages:</strong></p>
+<div class="skills">
+<a href="#"><span>Python</span></a>
+<a href="#"><span>C++</span></a>
+<a href="#"><span>SQL</span></a>
+<a href="#"><span>C#</span></a>
+</div>
+
+<p><strong>Data & Analytics:</strong></p>
+<div class="skills">
+<a href="#"><span>Data Cleaning</span></a>
+<a href="#"><span>Data Transformation</span></a>
+<a href="#"><span>Pandas</span></a>
+<a href="#"><span>EDA</span></a>
+<a href="#"><span>Matplotlib</span></a>
+<a href="#"><span>Seaborn</span></a>
+</div>
+
+<p><strong>Data Engineering:</strong></p>
+<div class="skills">
+<a href="#"><span>Data Pipelines</span></a>
+<a href="#"><span>Data Wrangling</span></a>
+<a href="#"><span>Workflow Design</span></a>
+<a href="#"><span>ETL</span></a>
+</div>
+
+<p><strong>Databases:</strong></p>
+<div class="skills">
+<a href="#"><span>MySQL</span></a>
+<a href="#"><span>SQL Server</span></a>
+<a href="#"><span>MS Access</span></a>
+<a href="#"><span>Relational Design</span></a>
+<a href="#"><span>Query Optimization</span></a>
+</div>
+
+<p><strong>Big Data Technologies:</strong></p>
+<div class="skills">
+<a href="#"><span>Hadoop</span></a>
+<a href="#"><span>Hive</span></a>
+<a href="#"><span>Spark</span></a>
+</div>
+
+<p><strong>Tools & Platforms:</strong></p>
+<div class="skills">
+<a href="#"><span>Airflow</span></a>
+<a href="#"><span>dbt</span></a>
+<a href="#"><span>Git</span></a>
+<a href="#"><span>GitHub</span></a>
+</div>
+
+<p><strong>Backend & Concepts:</strong></p>
+<div class="skills">
+<a href="#"><span>REST API Concepts</span></a>
+</div>
+
+<p><strong>Core CS:</strong></p>
+<div class="skills">
+<a href="#"><span>OOP</span></a>
+<a href="#"><span>Data Structures</span></a>
+<a href="#"><span>Algorithms</span></a>
+</div>
+
+<h3>Soft Skills</h3>
+<ul>
+<li>Clear communication</li>
+<li>Problem solving</li>
+<li>Structured planning</li>
+<li>Adaptability</li>
+<li>Teamwork</li>
+<li>Continuous learning</li>
+</ul>
+
+</section>
+
+<section>
+<h2>Contact</h2>
+
+<div class="contact-container">
+
+<a href="https://www.linkedin.com/in/mustafa-khaled-6a4b33318/" target="_blank" class="icon linkedin">
+<span>LinkedIn</span>
+<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+</a>
+
+<a href="mailto:mustafakhaled2175@gmail.com" class="icon email">
+<span>Email</span>
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+</a>
+
+<a href="https://wa.me/201154362612" target="_blank" class="icon whatsapp">
+<span>WhatsApp</span>
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Mustafa Khaled</p>
+</footer>
+
+</body>
+</html>
